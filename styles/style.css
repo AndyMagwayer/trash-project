@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+::selection{
+    background-color: #27AE60;
+    color: #fff;
+}
+
 body {
     font-family: 'rubik';
     color: #1D1D1B;
@@ -172,28 +177,28 @@ h2 {
 
 
 /* about */
-.about{
+.about {
     padding-bottom: 80px;
 }
 
-.about .container{
+.about .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 
-.about .info{
+.about .info {
     width: 580px;
 }
 
-.about .info .text{
+.about .info .text {
     font-size: 18px;
     color: #67675f;
     margin-top: 28px;
 }
 
-.about.count{
+.about.count {
     width: 700px;
     height: 446px;
     background-color: #f8f8f8;
@@ -203,26 +208,99 @@ h2 {
     border-radius: 24px;
 }
 
-.about .about.count .num{
+.about .about.count .num {
     text-align: center;
 
 }
 
 
-.about .count .top{
+.about .count .top {
     font-size: 88px;
     font-weight: 300;
     color: #1D1D1B;
 }
 
-.about .count .top sup{
+.about .count .top sup {
     color: #27AE60;
     font-size: 40px;
     font-weight: 500;
 }
 
 
-.about .count .text{
+.about .count .text {
     font-size: 24px;
     color: #67675f;
+}
+
+
+/* contacts */
+.contacts {
+    background-color: #f8f8f8;
+
+}
+
+.contacts .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacts .left {
+    width: 489px;
+
+}
+
+.contacts .left .subtitle {
+    font-size: 28px;
+    color: #27AE60;
+    margin: 23px 0 30px;
+
+}
+
+.contacts .left .text {
+    font-size: 22px;
+    margin-bottom: 50px;
+
+}
+
+.contacts .right {
+    padding: 56px 0;
+}
+
+.contacts .form {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 40px rgba(7, 17, 51, 0.07);
+    padding: 45px;
+    width: 686px;
+
+}
+
+
+.contacts .form-input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 23px 30px;
+}
+
+.contacts .form-input::placeholder {
+    font-size: 18px;
+    opacity: 0.5;
+    color: #181a28;
+}
+
+
+.contacts .form textarea{
+    resize: none;
+    height: 170px;
+
+}
+
+
+.contacts .form-input:focus{
+    outline: none;
+    border-color: #27AE60;
 }
